@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<style>
+body {
+    background:#f7bdd5;
+    background-image: -o-linear-gradient();
+}
+h1 {
+  color: rgb(38, 9, 65);
+  text-decoration: underline;
+  font-size: 48px;
+  font-weight: 100;
+  text-align: center;  
+}
+h2 {
+    text-align: center;
+
+}
+h3 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    text-transform: none;
+    font-style: oblique;
+    color: black;
+}
+button {
+    margin: 0 auto;
+    display: block;
+    color: whitesmoke;
+    padding: 20px 30px;
+    background: blue;
+    background: -o-linear-gradient(0);
+    text-decoration-color: antiquewhite;
+    transition: all 200ms ease-in-out;
+    border: 5px solid white;
+    border-radius: 40px
+}
+button.hover {
+    background: rgb(236, 181, 236);
+    color: white;
+    cursor: pointer;
+}
+    .joinUs {
+        display: block;
+        margin: 10px;
+        text-decoration: none;
+    }
+.joinUs.hover {
+    text-decoration:underline;
+}
+br {
+    line-height: 20%;
+
+}
+a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+body, html {
+  height: 100%;
+}
+html, body{
+  background-color: #fcd3fc;
+  margin: auto;
+  width: 900px;
+  position: absolute;
+}
+body, #background-image{
+ background: url(#) right;
+  width: 100%;
+  position: relative;
+  right: 0;
+  left: 0;
+  
+}
+</style>
+<body>
+    <h1>
+        Tech Queens
+    </h1>
+    <h2>
+        The rise of female HVAC&R Technicians
+
+    </h2>
+    <br>
+     <main>
+      <div id="background-image"></div>
+      <div id="container">
+        <div class="container__image">
+          <img src="https://m.media-amazon.com/images/I/71JfrMdow7L.jpg" width ="200">
+        </div>
+    <h3>
+        <hr>
+        Empowering the future of HVAC
+    </h3>
+</hr>
+    </body>
+    <p>
+        An organization specifically aimed at supporting and empowering women in the <em>HVAC</em> industry.
+        The industry has traditionally been male-dominated, but there's a growing number of women entering the feild.
+        This is opening up new opportunities and changing the face of the industry for the better.
+        Ladies in <em>HVAC</em> are just skilled and qualified as their male counterparts. they undergo the same training and certification processes, and they're just as capable of handling any <em>HVAC</em> challenge.
+       </p>
+       <p>
+        There's a shortage of qualified <em>HVAC</em> technicians overall,and that includes women. This means there are plenty of opportunities for women to enter the field and find good jobs.
+        
+        <br>   
+        <p>
+   <img src = "
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/121/495/original/rahab.jpg?1712052633" width = "200" />
+<br>
+</p>
+<p>
+    If you are interested in learning more about women in <em>HVAC</em> you can check out the resources from organizations like Women in HVAC&R.
+</p>
+<a href = "https://www.womeninhvacr.org/"
+    target="_blank" class="women">
+    Women in HVAC&R
+
+</a>
+
+    </p>
+    <p>
+    
+    </p>
+    <button> join Us </button>
+
+    <p>
+       <strong> Coded by Rahab Molepo </strong>
+    </p>
+    
+    
+    <script>
+
+     function joinUs() {
+        let name = prompt("What is your name?");
+        let trade = prompt("Are you Trade tested in HVAC&R?");
+        let heading = document.querySelector("h1");
+
+        if (yes = trade) {
+            heading.innerHTML = "Hello " + name + " Welcome to Tech Queens ";
+
+        } else {
+            heading.innerHTML = "Sorry " + name + " We can only help once you are Trade tested";
+        }
+        }
+
+        let joinUsButton = document.querySelector("button");
+        joinUsButton.addEventListener("click", joinUs);
+    
+    
+    </script>
+</body>
+</html>
